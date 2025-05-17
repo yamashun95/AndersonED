@@ -1,8 +1,22 @@
 """
-andersoned – Exact-diagonalization helpers for the Anderson impurity model.
+andersoned: Exact‐Diagonalisation utilities for the Anderson impurity model
 """
 
-from .fit_bethe import bethe_green, fit_bethe_bath
+from .fit_bethe import fit_bethe_bath, bethe_green
+from .ed import (
+    build_hamiltonian,
+    diagonalize,
+    green_matsubara,
+    green_realaxis,
+    spectral_function,
+)
 
-__all__ = ["bethe_green", "fit_bethe_bath"]
-__version__ = "0.1.0"
+__all__ = [
+    "fit_bethe_bath",
+    "bethe_green",
+    "build_hamiltonian",
+    "diagonalize",
+    "green_matsubara",
+    "green_realaxis",
+    "spectral_function",
+]
